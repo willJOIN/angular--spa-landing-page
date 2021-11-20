@@ -1,0 +1,51 @@
+.faq{
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60.77px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  margin-top: 44px;
+  margin-bottom: 224px;
+  margin-left: 227.5px;
+  margin-right: 65px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#accordion{
+  width: 605px;
+  margin-top: -680px;
+  margin-bottom: 261px;
+  margin-left: 60px;
+  margin-right: 227.5px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#titles{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #2B2B2B;
+}
+
+.card-body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #2B2B2B;
+}

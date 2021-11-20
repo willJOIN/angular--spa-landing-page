@@ -1,0 +1,71 @@
+.home{
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60.77px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  margin-top: 45px;
+}
+
+img{
+  width: 750px;
+  height: 500px;
+  margin-top: 44px;
+  margin-bottom: 224px;
+  margin-left: 60px;
+  margin-right: 60px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+p{
+  width: 690px;
+  height: 362px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #2B2B2B;
+  margin-top: 151px;
+  margin-bottom: 255px;
+  margin-left: 60px;
+  margin-right: 65px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+// TODO Media Queries
+// iMac
+@media(max-width: 1685px){
+  h1 {
+    // width: 100%;
+  }
+  img {
+    // width: 100%;
+  }
+  p {
+    // width: 100%;
+  }
+}
+
+// iPhone 13 mini
+@media(max-width: 438px){
+  // 934 to 438
+  h1 {
+    //width: 47.402597402597%;
+  }
+  // 750 to 379
+  img {
+    //width: 50.533333333333%;
+  }
+  // 690 to 378
+  p {
+    //width: 54.782608695652%;
+  }
+}
