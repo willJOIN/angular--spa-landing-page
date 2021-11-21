@@ -3,6 +3,8 @@
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  // TODO Fix Color 
+  color: #000000;
   background-color: #FFFEFF;
   border-radius: 0px 0px 30px 30px;
   display: flex;
@@ -10,8 +12,18 @@
   justify-content: center;
   column-gap: 70px;
   row-gap: 10px;
+  .a{
+    cursor: pointer;
+  }
 }
 
-.a{
-  cursor: pointer;
+@media(max-width: 768px){
+  .navbar{
+    border-radius: 30px 30px 30px 30px;
+    // TODO Fix Navbar Down 
+    position: relative;
+    top: 1460px;
+    // TODO Change Text for Icon
+
+  }
 }
