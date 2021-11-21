@@ -40,32 +40,20 @@ p{
   grid-column-end: 2;
 }
 
-// TODO Media Queries
-// iMac
-@media(max-width: 1685px){
-  h1 {
-    // width: 100%;
+// Mobile
+@media(max-width: 768px){
+  .home{
+    display: flex;
+    flex-direction: column;
   }
-  img {
-    // width: 100%;
+  h1{
+    font-size: 200%;
   }
-  p {
-    // width: 100%;
+  img{
+    width: 80%;
   }
-}
-
-// iPhone 13 mini
-@media(max-width: 438px){
-  // 934 to 438
-  h1 {
-    //width: 47.402597402597%;
-  }
-  // 750 to 379
-  img {
-    //width: 50.533333333333%;
-  }
-  // 690 to 378
-  p {
-    //width: 54.782608695652%;
+  p{
+    width: fit-content;
+    text-align: center;
   }
 }

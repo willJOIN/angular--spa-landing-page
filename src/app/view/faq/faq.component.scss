@@ -49,3 +49,22 @@ img{
   letter-spacing: 0.05em;
   color: #2B2B2B;
 }
+
+// Mobile
+@media(max-width: 768px){
+  .faq{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    font-size: 200%;
+  }
+  img{
+    width: 50%;
+    margin: auto;
+  }
+  #accordion{
+    width: 80%;
+    margin-top: 0px;
+  }
+}
