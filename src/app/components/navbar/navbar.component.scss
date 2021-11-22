@@ -3,8 +3,6 @@
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  // TODO Fix Color 
-  color: #000000;
   background-color: #FFFEFF;
   border-radius: 0px 0px 30px 30px;
   display: flex;
@@ -13,8 +11,10 @@
   column-gap: 70px;
   row-gap: 10px;
   scroll-behavior: smooth;
-  .a{
+  a{
+    color: #000000;
     cursor: pointer;
+    text-decoration: none;
   }
 }
 
