@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Landing_Page'`, () => {
+  it(`should have as title 'Landing_Page_Angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Landing_Page');
+    expect(app.title).toEqual('Landing_Page_Angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Landing_Page app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Landing_Page_Angular app is running!');
   });
 });
