@@ -1,3 +1,3 @@
 # Landing Page Angular
 
-Protótipo de uma Landing Page responsiva com Angular.
+Landing Page responsiva com Angular.
