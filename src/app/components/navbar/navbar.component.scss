@@ -1,4 +1,4 @@
-.navbar{
+#navbar{
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -19,7 +19,7 @@
 }
 
 @media(max-width: 768px){
-  .navbar{
+  #navbar{
     border-radius: 30px 30px 30px 30px;
     // TODO Fix Navbar Down 
     position: relative;
