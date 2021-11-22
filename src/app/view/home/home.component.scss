@@ -1,4 +1,4 @@
-.home{
+#home{
   display: grid;
   grid-column: 1fr 1fr;
 }
@@ -42,7 +42,7 @@ p{
 
 // Mobile
 @media(max-width: 768px){
-  .home{
+  #home{
     display: flex;
     flex-direction: column;
   }
