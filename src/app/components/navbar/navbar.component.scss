@@ -10,15 +10,13 @@
   justify-content: center;
   column-gap: 70px;
   row-gap: 10px;
-  // TODO Current Link Bold
-  a{
-    color: #000000;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .a:active{
-    font-weight: bold;
-  }
+}
+
+// TODO Current Link Bold
+#navbar a{
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #navbarMobile{
@@ -43,9 +41,9 @@
     align-items: center;
     column-gap: 70px;
     row-gap: 10px;
-    a{
-      height: 30px;
-      cursor: pointer;
-    }
+  }
+  #navbarMobile a{
+    height: 30px;
+    cursor: pointer;
   }
 }
