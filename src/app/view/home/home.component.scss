@@ -19,12 +19,13 @@ h1{
 img{
   width: 750px;
   height: 500px;
-  margin-top: 44px;
-  margin-bottom: 224px;
-  margin-left: 60px;
-  margin-right: 60px;
   grid-column-start: 1;
   grid-column-end: 1;
+  position: relative;
+  top: 44px;
+  bottom: 224px;
+  left: 60px;
+  right: 60px;
 }
 
 p{
