@@ -1,5 +1,6 @@
 #faqBackground{
-  background-color: #fff3ef;
+  height: 100vh;
+  background-color: #FFF3EF;
 }
 
 #faq{
@@ -93,4 +94,14 @@ img{
     margin-top: 10%;
     margin-bottom: 7.25rem;
   }
+}
+
+// Tablet
+@media(min-width: 769px) and (max-width: 1279px){
+
+}
+
+// Desktop
+@media(min-width: 1280px){
+
 }
