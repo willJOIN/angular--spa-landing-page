@@ -1,33 +1,32 @@
 #faqBackground{
-  height: 100vh;
+  max-height: 100vh;
   background-color: #FFF3EF;
+  align-content: center;
 }
 
 #faq{
   display: grid;
-  grid-column: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 5%;
+  row-gap: 5%;
 }
 
 h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 60.77px;
   font-weight: 800;
   text-align: center;
   color: #000000;
   position: relative;
   top: 5.9375rem;
-  margin-bottom: 81px;
 }
 
 img{
-  width: 500px;
+  width: 100%;
   height: 500px;
-  margin: 2.75rem auto 16rem;
-  grid-column-start: 2;
-  grid-column-end: 2;
 }
 
-// TODO Pure accordion 
+// TODO Accordion redesign 
 #accordion{
   width: 605px;
   margin: 2rem auto 16rem;
@@ -76,32 +75,46 @@ img{
 
 // Mobile
 @media(max-width: 768px){
-  #faq{
-    display: flex;
-    flex-direction: column;
-  }
   h1{
     font-size: 200%;
   }
   img{
     width: 80%;
-    margin: auto;
+    margin: 0 auto 0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
   #accordion{
     width: 80%;
     height: 80%;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 7.25rem;
   }
 }
 
 // Tablet
 @media(min-width: 769px) and (max-width: 1279px){
-
+  h1{
+    font-size: 60.77px;
+  }
+  img{
+    margin: 0 auto 0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
 }
 
 // Desktop
 @media(min-width: 1280px){
-
+  h1{
+    font-size: 60.77px;
+  }
+  img{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
 }
