@@ -9,7 +9,6 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   column-gap: 5%;
-  row-gap: 5%;
 }
 
 h1{
@@ -22,8 +21,8 @@ h1{
 }
 
 img{
-  width: 100%;
   height: 500px;
+
 }
 
 // TODO Accordion redesign 
@@ -76,29 +75,30 @@ img{
 // Mobile
 @media(max-width: 768px){
   h1{
-    font-size: 200%;
+    font-size: 35.6606px;
+    position: relative;
+    top:  6.9375rem;
   }
   img{
-    width: 80%;
-    margin: 0 auto 0;
+    max-width: 60%;
+    margin: 2rem auto 0;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
-  }
-  #accordion{
-    width: 80%;
-    height: 80%;
   }
 }
 
 // Tablet
 @media(min-width: 769px) and (max-width: 1279px){
   h1{
-    font-size: 60.77px;
+    font-size: 35.6606px;
+    position: relative;
+    top:  6.9375rem;
   }
   img{
-    margin: 0 auto 0;
+    max-width: 60%;
+    margin: 10rem auto 0;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -112,6 +112,8 @@ img{
     font-size: 60.77px;
   }
   img{
+    max-width: 100%;
+    margin: 2.75rem auto 0;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
