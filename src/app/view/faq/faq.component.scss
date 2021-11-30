@@ -22,54 +22,66 @@ h1{
 
 img{
   height: 500px;
-
 }
 
 // TODO Accordion redesign 
-#accordion{
-  width: 605px;
-  margin: 2rem auto 16rem;
-  grid-column-start: 1;
-  grid-column-end: 1;
+// https://www.w3schools.com/howto/howto_js_accordion.asp
+ul{
+  list-style: none;
 }
 
-#accordionItem{
-  background-color: #FFFFFF;
-  border-radius: 15px;
+.accordion{
+  width: 100%; // 605px
+  height: 60px;
   padding: 20px;
+  background-color: #FFFFFF;
   color: #2B2B2B;
-}
-
-#accordionItemHeader{
+  border-color: #FFFFFF;
+  border-radius: 15px;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0.05em;
+  text-align: left;
+  transition: 0.4s;
+  outline: none;
+  cursor: pointer;
+  grid-column-start: 1;
+  grid-column-end: 1;
 }
 
-#accordionItemHeader::before{
+.accordion::after{
   content: url(../../../assets/accordionTriangle.svg);
   border-radius: 3px;
   color: #D13C74;
   cursor: pointer;
+  float: right;
 }
 
-#accordionItemHeader::after{
+.active::after{
   content: url(../../../assets/accordionTriangle.svg);
+  float: right;
+  border-radius: 3px;
+  color: #D13C74;
+  cursor: pointer;
+  float: right;
   position: absolute;
   transform: rotate(180deg);
-  border-radius: 3px;
-  color: #D13C74;
-  cursor: pointer;
 }
 
-#accordionItemBody{
+.panel{
+  max-height: 0;
+  background-color: #FFFFFF;
+  color: #2B2B2B;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 21px;
   letter-spacing: 0.05em;
+  display: none; // Hide
+  overflow: hidden; // Hide
+  transition: max-height 0.2s ease-out;
 }
 
 // Mobile
@@ -86,6 +98,13 @@ img{
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+  }
+  .accordion{
+    grid-row-start: 2; 
+    grid-row-end: 2;
+  }
+  .panel{
+
   }
 }
 
@@ -104,6 +123,13 @@ img{
     grid-row-start: 1;
     grid-row-end: 1;
   }
+  .accordion{
+    grid-row-start: 2; 
+    grid-row-end: 2;
+  }
+  .panel{
+
+  }
 }
 
 // Desktop
@@ -118,5 +144,12 @@ img{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+  }
+  .accordion{
+    grid-row-start: 1; 
+    grid-row-end: 1; 
+  }
+  .panel{
+
   }
 }
