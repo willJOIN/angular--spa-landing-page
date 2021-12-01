@@ -26,6 +26,7 @@ img{
 
 // TODO Accordion redesign 
 // https://www.w3schools.com/howto/howto_js_accordion.asp
+// TODO For some reason centering is not working on mobile & tablet wtf
 ul{
   list-style: none;
 }
@@ -79,8 +80,8 @@ ul{
   font-weight: 300;
   line-height: 21px;
   letter-spacing: 0.05em;
-  display: none; // Hide
-  overflow: hidden; // Hide
+  display: none; 
+  overflow: hidden; 
   transition: max-height 0.2s ease-out;
 }
 
@@ -93,7 +94,7 @@ ul{
   }
   img{
     max-width: 60%;
-    margin: 2rem auto 0;
+    margin: 6rem auto 1.5rem;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -103,8 +104,13 @@ ul{
     grid-row-start: 2; 
     grid-row-end: 2;
   }
-  .panel{
-
+  ul{
+    width: 60%;
+    margin: 1.5rem auto 6rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
 }
 
@@ -117,7 +123,7 @@ ul{
   }
   img{
     max-width: 60%;
-    margin: 10rem auto 0;
+    margin: 6rem auto 1.5rem;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -125,10 +131,15 @@ ul{
   }
   .accordion{
     grid-row-start: 2; 
-    grid-row-end: 2;
+    grid-row-end: 2; 
   }
-  .panel{
-
+  ul{
+    width: 60%;
+    margin: 1.5rem auto 6rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
 }
 
@@ -138,18 +149,20 @@ ul{
     font-size: 60.77px;
   }
   img{
-    max-width: 100%;
+    width: 605px;
     margin: 2.75rem auto 0;
+    margin-right: 7rem;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
   }
   .accordion{
+    margin-left: 4rem;
     grid-row-start: 1; 
     grid-row-end: 1; 
   }
-  .panel{
-
+  ul{
+    margin-top: 6rem;
   }
 }
